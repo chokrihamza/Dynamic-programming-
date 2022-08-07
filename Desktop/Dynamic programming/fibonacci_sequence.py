@@ -1,16 +1,13 @@
-# This is a sample Python script.
+# the first implemention is not optimized
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def fib(n):
+    # base case
+    if n<=1:return n
+    return fib(n-1)+fib(n-2)
+# time complexity is O(2^n) !!!!!!!
+print(fib(0))
+print(fib(1))
+print(fib(5))
+print(fib(6))
+print(fib(100))  # takes many time to retun the result !!!!!!!
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
